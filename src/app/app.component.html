@@ -1,0 +1,8 @@
+<div class="main-container">
+    <ul>
+        @for (item of tagValues.keys(); track $index) {
+            <li> <app-echart [tagId]="item" [data]="tagValues.get(item)"/> </li> 
+        } 
+    </ul>
+    
+</div>
